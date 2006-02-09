@@ -9,8 +9,7 @@ Source0:	http://dl.sourceforge.net/paco/%{name}-%{version}.tar.bz2
 # Source0-md5:	b3cc9a1bd7bf218adf38ee23eecb48dd
 Patch0:		%{name}-Makefile.patch
 URL:		http://paco.sourceforge.net/
-BuildRequires:	gtk+2 => 2:2.6.0
-BuildRequires:	gtk+2-devel
+BuildRequires:	gtk+2-devel >= 2:2.6.0
 BuildRequires:	pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
