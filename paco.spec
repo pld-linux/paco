@@ -9,7 +9,8 @@ Source0:	http://dl.sourceforge.net/paco/%{name}-%{version}.tar.bz2
 # Source0-md5:	b3cc9a1bd7bf218adf38ee23eecb48dd
 Patch0:		%{name}-Makefile.patch
 URL:		http://paco.sourceforge.net/
-BuildRequires:	gtk+2 > 2:2:2.6.0
+BuildRequires:	gtk+2 => 2:2.6.0
+BuildRequires:	gtk+2-devel
 BuildRequires:	pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -78,8 +79,8 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_sysconfdir},%{_mandir}/{man5,man8}}
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
-mv $RPM_BUILD_ROOT%{_mandir}/man5/* $RPM_BUILD_ROOT%{_mandir}/man5
-mv $RPM_BUILD_ROOT%{_mandir}/man8/* $RPM_BUILD_ROOT%{_mandir}/man8
+mv $RPM_BUILD_ROOT%{_prefix}/man/man5/* $RPM_BUILD_ROOT%{_mandir}/man5
+mv $RPM_BUILD_ROOT%{_prefix}/man/man8/* $RPM_BUILD_ROOT%{_mandir}/man8
 install -d $RPM_BUILD_ROOT/var/log/paco
 
 %clean
