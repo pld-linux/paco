@@ -1,5 +1,5 @@
-Summary:	Paco is a source code package organizer for Unix/Linux systems
-Summary(pl):	Paco to manager paczek ¼ród³owych dla systemów Unix/Linux
+Summary:	Paco - a source code package organizer for Unix/Linux systems
+Summary(pl):	Paco - zarz±dca pakietów ¼ród³owych dla systemów Unix/Linux
 Name:		paco
 Version:	1.10.2
 Release:	0.2
@@ -20,7 +20,7 @@ and generates a log containing the list of all installed files.
 
 %description -l pl
 Przy instalacji programów ze ¼róde³ paco przechwytuje "make install"
-(lub inne komendy które s± potrzebne do zainstalowania danego
+(lub inne polecenia, które s± potrzebne do zainstalowania danego
 programu) i tworzy log zawieraj±cy listê wszystkich instalowanych
 plików, umo¿liwiaj±c w przysz³o¶ci ³atwe i skuteczne odinstalowanie
 pakietu.
@@ -32,10 +32,10 @@ Group:		Applications/System
 Requires:	%{name} = %{version}-%{release}
 
 %description gui
-GTK+2 gui for paco.
+GTK+2 GUI for paco.
 
 %description gui -l pl
-Graficzny interfejs dla paco w GTK+2.
+Graficzny interfejs GTK+2 dla paco.
 
 %package scripts
 Summary:	Addtional scripts for paco
@@ -83,8 +83,8 @@ install -d $RPM_BUILD_ROOT/var/log/paco
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%post -p /sbin/ldconfig
-%postun -p /sbin/ldconfig
+%post	-p /sbin/ldconfig
+%postun	-p /sbin/ldconfig
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
