@@ -2,12 +2,13 @@ Summary:	Paco - a source code package organizer for Unix/Linux systems
 Summary(pl):	Paco - zarz±dca pakietów ¼ród³owych dla systemów Unix/Linux
 Name:		paco
 Version:	1.10.2
-Release:	0.2
+Release:	0.3
 License:	GPL v2
 Group:		Applications/System
 Source0:	http://dl.sourceforge.net/paco/%{name}-%{version}.tar.bz2
 # Source0-md5:	b3cc9a1bd7bf218adf38ee23eecb48dd
 Patch0:		%{name}-Makefile.patch
+Patch1:		%{name}-desktop.patch
 URL:		http://paco.sourceforge.net/
 BuildRequires:	gtk+2-devel >= 2:2.6.0
 BuildRequires:	pkgconfig
@@ -59,8 +60,7 @@ Dodatkowe skrypty dla paco.
 %prep
 %setup -q
 %patch0 -p1
-sed -i -e 's#Categories=Application;System;#Categories=GTK;Application;System;#' \
-	doc/gpaco.desktop
+%patch1 -p1
 
 %build
 %configure \
