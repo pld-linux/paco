@@ -1,0 +1,14 @@
+diff -urN paco-1.10.2/doc/gpaco.desktop paco-1.10.2.new/doc/gpaco.desktop
+--- paco-1.10.2/doc/gpaco.desktop	2005-09-19 18:54:13.000000000 +0200
++++ paco-1.10.2.new/doc/gpaco.desktop	2006-02-11 20:04:35.000000000 +0100
+@@ -4,8 +4,9 @@
+ Name=gpaco
+ Comment=Source code package organizer
+ Comment[ca]=Organitzador de paquets de codi font
++Comment[pl]=Zarządca pakietów źródłowych
+ Exec=gpaco
+ Icon=gpaco.png
+ StartupNotify=false
+ Terminal=false
+-Categories=Application;System;
++Categories=GTK;System;
