@@ -1,5 +1,5 @@
 Summary:	Paco - a source code package organizer for Unix/Linux systems
-Summary(pl):	Paco - zarz±dca pakietów ¼ród³owych dla systemów Unix/Linux
+Summary(pl.UTF-8):   Paco - zarzÄ…dca pakietÃ³w ÅºrÃ³dÅ‚owych dla systemÃ³w Unix/Linux
 Name:		paco
 Version:	1.10.2
 Release:	0.3
@@ -19,28 +19,28 @@ When installing a package from sources, paco wraps the "make install"
 command (or whatever is needed to install the files into the system),
 and generates a log containing the list of all installed files.
 
-%description -l pl
-Przy instalacji programów ze ¼róde³ paco przechwytuje "make install"
-(lub inne polecenia, które s± potrzebne do zainstalowania danego
-programu) i tworzy log zawieraj±cy listê wszystkich instalowanych
-plików, umo¿liwiaj±c w przysz³o¶ci ³atwe i skuteczne odinstalowanie
+%description -l pl.UTF-8
+Przy instalacji programÃ³w ze ÅºrÃ³deÅ‚ paco przechwytuje "make install"
+(lub inne polecenia, ktÃ³re sÄ… potrzebne do zainstalowania danego
+programu) i tworzy log zawierajÄ…cy listÄ™ wszystkich instalowanych
+plikÃ³w, umoÅ¼liwiajÄ…c w przyszÅ‚oÅ›ci Å‚atwe i skuteczne odinstalowanie
 pakietu.
 
 %package gui
 Summary:	GTK+2 frontend to paco
-Summary(pl):	Nak³adka na paco w GTK+2
+Summary(pl.UTF-8):   NakÅ‚adka na paco w GTK+2
 Group:		Applications/System
 Requires:	%{name} = %{version}-%{release}
 
 %description gui
 GTK+2 GUI for paco.
 
-%description gui -l pl
+%description gui -l pl.UTF-8
 Graficzny interfejs GTK+2 dla paco.
 
 %package scripts
 Summary:	Addtional scripts for paco
-Summary(pl):	Dodatkowe skrypty dla paco
+Summary(pl.UTF-8):   Dodatkowe skrypty dla paco
 Group:		Applications/System
 Requires:	%{name} = %{version}-%{release}
 
@@ -51,11 +51,11 @@ Addtional scripts for paco.
 - pacoball: Creates binary packages from installed (and logged by paco)
   packages.
 
-%description scripts -l pl
+%description scripts -l pl.UTF-8
 Dodatkowe skrypty dla paco.
 - a2paco: Tworzy logi z lokalnych baz dpkg lub rpm.
-- superpaco: Instalacja pakietów deb, rpm, lub tgz z paco.
-- pacoball: Tworzy pakiety binarne z instalowanych programów.
+- superpaco: Instalacja pakietÃ³w deb, rpm, lub tgz z paco.
+- pacoball: Tworzy pakiety binarne z instalowanych programÃ³w.
 
 %prep
 %setup -q
