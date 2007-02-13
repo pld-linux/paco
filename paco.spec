@@ -1,5 +1,5 @@
 Summary:	Paco - a source code package organizer for Unix/Linux systems
-Summary(pl.UTF-8):   Paco - zarządca pakietów źródłowych dla systemów Unix/Linux
+Summary(pl.UTF-8):	Paco - zarządca pakietów źródłowych dla systemów Unix/Linux
 Name:		paco
 Version:	1.10.2
 Release:	0.3
@@ -28,7 +28,7 @@ pakietu.
 
 %package gui
 Summary:	GTK+2 frontend to paco
-Summary(pl.UTF-8):   Nakładka na paco w GTK+2
+Summary(pl.UTF-8):	Nakładka na paco w GTK+2
 Group:		Applications/System
 Requires:	%{name} = %{version}-%{release}
 
@@ -40,7 +40,7 @@ Graficzny interfejs GTK+2 dla paco.
 
 %package scripts
 Summary:	Addtional scripts for paco
-Summary(pl.UTF-8):   Dodatkowe skrypty dla paco
+Summary(pl.UTF-8):	Dodatkowe skrypty dla paco
 Group:		Applications/System
 Requires:	%{name} = %{version}-%{release}
 
